@@ -9,17 +9,36 @@ A collection of [n8n](https://n8n.io/) automation workflows. Each workflow lives
 ```
 n8n-workflows/
 ├── README.md                        <- this file (index + change tracker)
-└── Google Maps Email Scraper/
+├── 01 - Google Maps Email Scraper/
+│   ├── README.md                    <- workflow documentation
+│   ├── Google Maps Email Scraper.json
+│   └── Screenshot From 2026-08-11 10-32-59.png   <- workflow screenshot
+└── 02 - Google Tools AI Chat Agent/
     ├── README.md                    <- workflow documentation
-    ├── Google Maps Email Scraper.json
-    └── Screenshot From 2026-08-11 10-32-59.png   <- workflow screenshot
+    ├── Google Tools AI Chat Agent.json
+    └── Screenshot From 2026-08-11 17-00-36.png   <- workflow screenshot
 ```
+
+> **Numbering:** folder names are prefixed with `01 -`, `02 -`, … so the workflow order is visible on GitHub. Add new workflows with the next number in sequence.
 
 ## 📋 Workflows
 
 | # | Workflow | Description | Status |
 |---|----------|-------------|--------|
-| 1 | [Google Maps Email Scraper](Google%20Maps%20Email%20Scraper/README.md) | Searches Google Maps for businesses (e.g. IT companies in Bangalore), visits their websites, scrapes email addresses, deduplicates/filters them, and appends them to a Google Sheet. | ✅ Active |
+| 1 | [01 - Google Maps Email Scraper](01%20-%20Google%20Maps%20Email%20Scraper/README.md) | Searches Google Maps for businesses (e.g. IT companies in Bangalore), visits their websites, scrapes email addresses, deduplicates/filters them, and appends them to a Google Sheet. | ✅ Active |
+| 2 | [02 - Google Tools AI Chat Agent](02%20-%20Google%20Tools%20AI%20Chat%20Agent/README.md) | AI chat agent powered by Groq (llama-3.3-70b) that can send emails via Gmail, work with Google Calendar, and read/write Google Sheets — all from natural-language chat. | 🧪 Testing |
+
+## 📸 Workflow previews
+
+### 01 - Google Maps Email Scraper
+
+![Google Maps Email Scraper](01%20-%20Google%20Maps%20Email%20Scraper/Screenshot%20From%202026-08-11%2010-32-59.png)
+
+### 02 - Google Tools AI Chat Agent 
+
+![Google Tools AI Chat Agent](02%20-%20Google%20Tools%20AI%20Chat%20Agent/Screenshot%20From%202026-08-11%2017-00-36.png)
+
+> New workflows get their screenshot added here too, right below their index entry.
 
 ## 🚀 How to use
 
@@ -40,6 +59,8 @@ This section is the master log for everything that changes in this repo — new 
 
 | Date | Type | Description |
 |------|------|-------------|
+| 2026-08-11 | ✏️ Updated | Renumbered workflow folders to `01 - …` / `02 - …` for easy ordering on GitHub, and added a **Workflow previews** section to this README so screenshots render inline. |
+| 2026-08-11 | ➕ Added | Added `Google Tools AI Chat Agent` workflow (Groq-powered chat agent with Gmail / Calendar / Sheets tools), its README, and a workflow screenshot. |
 | 2026-08-11 | 📝 Documented | Added a Screenshots & images tracking table to the `Google Maps Email Scraper` README (tracks `Screenshot From 2026-08-11 10-32-59.png`). |
 | 2026-08-11 | ➕ Added | Initial repo setup: added `Google Maps Email Scraper` workflow, its README, and this master README with a change tracker. |
 
@@ -53,7 +74,7 @@ Whenever a change is made to this repo, add a new row at the top of the changelo
 2. **Type** — one of the legend symbols above
 3. **Description** — what changed, which workflow, and why
 
-**Images rule:** every image/screenshot in the repo must be listed in the *Screenshots & images* table of its workflow README. When you add or remove an image, update that table **and** add a changelog row here.
+**Images rule:** every image/screenshot in the repo must be listed in the *Screenshots & images* table of its workflow README **and** previewed in the *Workflow previews* section of this file. When you add or remove an image, update both **and** add a changelog row here.
 
 Example:
 
