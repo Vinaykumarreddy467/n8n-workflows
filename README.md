@@ -13,10 +13,14 @@ n8n-workflows/
 │   ├── README.md                    <- workflow documentation
 │   ├── Google Maps Email Scraper.json
 │   └── Screenshot From 2026-08-11 10-32-59.png   <- workflow screenshot
-└── 02 - Google Tools AI Chat Agent/
+├── 02 - Google Tools AI Chat Agent/
+│   ├── README.md                    <- workflow documentation
+│   ├── Google Tools AI Chat Agent.json
+│   └── Screenshot From 2026-08-11 17-00-36.png   <- workflow screenshot
+└── 03 - Integration Google Sheets, Groq, Linked API/
     ├── README.md                    <- workflow documentation
-    ├── Google Tools AI Chat Agent.json
-    └── Screenshot From 2026-08-11 17-00-36.png   <- workflow screenshot
+    ├── Integration Google Sheets, Groq, Linked API.blueprint.json
+    └── Screenshot From 2026-08-13 16-31-35.png   <- workflow screenshot
 ```
 
 > **Numbering:** folder names are prefixed with `01 -`, `02 -`, … so the workflow order is visible on GitHub. Add new workflows with the next number in sequence.
@@ -27,6 +31,7 @@ n8n-workflows/
 |---|----------|-------------|--------|
 | 1 | [01 - Google Maps Email Scraper](01%20-%20Google%20Maps%20Email%20Scraper/README.md) | Searches Google Maps for businesses (e.g. IT companies in Bangalore), visits their websites, scrapes email addresses, deduplicates/filters them, and appends them to a Google Sheet. | ✅ Active |
 | 2 | [02 - Google Tools AI Chat Agent](02%20-%20Google%20Tools%20AI%20Chat%20Agent/README.md) | AI chat agent powered by Groq (llama-3.3-70b) that can send emails via Gmail, work with Google Calendar, and read/write Google Sheets — all from natural-language chat. | 🧪 Testing |
+| 3 | [03 - Integration Google Sheets, Groq, Linked API](03%20-%20Integration%20Google%20Sheets%2C%20Groq%2C%20Linked%20API/README.md) | Make.com scenario blueprint: reads blog post URLs from a Google Sheet, summarizes them with Groq (llama-3.3-70b), publishes a LinkedIn post, and generates an Instagram caption saved back to the sheet. | 🧪 Testing |
 
 ## 📸 Workflow previews
 
@@ -37,6 +42,10 @@ n8n-workflows/
 ### 02 - Google Tools AI Chat Agent 
 
 ![Google Tools AI Chat Agent](02%20-%20Google%20Tools%20AI%20Chat%20Agent/Screenshot%20From%202026-08-11%2017-00-36.png)
+
+### 03 - Integration Google Sheets, Groq, Linked API
+
+![Integration Google Sheets, Groq, Linked API](03%20-%20Integration%20Google%20Sheets%2C%20Groq%2C%20Linked%20API/Screenshot%20From%202026-08-13%2016-31-35.png)
 
 > New workflows get their screenshot added here too, right below their index entry.
 
@@ -59,6 +68,7 @@ This section is the master log for everything that changes in this repo — new 
 
 | Date | Type | Description |
 |------|------|-------------|
+| 2026-08-13 | ➕ Added | Added `Integration Google Sheets, Groq, Linked API` — a Make.com scenario blueprint (Google Sheets → Groq summary → LinkedIn post publish + Instagram caption saved back to sheet), its README, and a workflow screenshot. |
 | 2026-08-11 | ✏️ Updated | Renumbered workflow folders to `01 - …` / `02 - …` for easy ordering on GitHub, and added a **Workflow previews** section to this README so screenshots render inline. |
 | 2026-08-11 | ➕ Added | Added `Google Tools AI Chat Agent` workflow (Groq-powered chat agent with Gmail / Calendar / Sheets tools), its README, and a workflow screenshot. |
 | 2026-08-11 | 📝 Documented | Added a Screenshots & images tracking table to the `Google Maps Email Scraper` README (tracks `Screenshot From 2026-08-11 10-32-59.png`). |
